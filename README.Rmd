@@ -27,8 +27,14 @@ __Última atualização__: 25/04/2021
 ## População
 
 ```{r pop, dpi = 300, fig.height=9, fig.width=7}
-library(ggplot2)
-library(vacinaBrasil)
+install.packages("magrittr")
+install.packages("dplyr")
+#install.packages("vacinaBrasil")?
+
+library("dplyr")
+library("magrittr")
+library("ggplot2")
+library("vacinaBrasil")
 
 fonte <- stringr::str_glue(
   "Fonte:\n",
